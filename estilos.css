@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.3rem;
+}
+.logo {
+  grid-area: logo;
+  margin: 20px;
+}
+.nav {
+  grid-area: nav;
+}
+.contenedor {
+  width: 100%;
+  background-color: rgb(9, 9, 121);
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "logo nav nav";
+  position: sticky;
+  top: 0px;
+}
+nav {
+  display: inline-block;
+  justify-self: end;
+  align-self: center;
+  left: 500px;
+  background: rgb(9, 9, 121);
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 1.2rem;
+}
+li {
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+  margin: 10px 20px;
+}
+ul ul {
+  position: absolute;
+  display: none;
+  text-align: left;
+}
+ul ul li {
+  display: block;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+a:hover {
+  color: aquamarine;
+  font-weight: bold;
+}
+ul li:hover ul {
+  display: block;
+  background-color: blue;
+}
+footer {
+  text-align: center;
+}
+h2 {
+  color: darkblue;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+h3:hover {
+  font-weight: bold;
+}
+.TextNav:hover {
+  transform: scale(1.2, 1.2);
+}
+.TitleAcerca:hover {
+  transform: scale(1.2, 1.2);
+}
+.animate__animated.animate__headShake {
+  --animate-duration: 2s;
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+section {
+  margin: 30px;
+  text-align: justify;
+}
+section h2 {
+  text-align: center;
+}
+.acerca img {
+  width: 100%;
+}
+.acerca {
+  margin: 30px;
+  align-items: center;
+  justify-self: center;
+}
+.texto1 {
+  grid-area: texto1;
+}
+.img1 {
+  grid-area: img1;
+}
+.texto2 {
+  grid-area: texto2;
+}
+.img2 {
+  grid-area: img2;
+}
+.acercacont {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 2, auto;
+  grid-template-areas:
+    "img1 texto1 texto1"
+    "texto2 texto2 img2";
+  gap: 30px;
+}
+.acercacont p {
+  justify-self: end;
+}
+.acercacont img {
+  width: 100%;
+}
+.parrafo {
+  display: inline-block;
+}
+.mascotas {
+  justify-self: center;
+}
+.ContPort {
+  justify-content: center;
+  display: grid;
+  grid-template-areas: "mascotas tecno funi";
+  gap: 40px;
+  margin: 20px;
+  text-align: center;
+}
+.ContPort img {
+  width: 15rem;
+}
+.ContPort p {
+  text-align: justify;
+}
+.mascotas {
+  grid-area: mascotas;
+}
+.Tecnoservicios {
+  grid-area: tecno;
+}
+.funimation {
+  grid-area: funi;
+}
+.ImgPort:hover {
+  transform: scale(1.2, 1.2);
+}
+.datos {
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.trayect {
+  text-align: center;
+}
+.trayect img {
+  width: 350px;
+}
+.trayect p {
+  text-align: justify;
+}
+.laboral {
+  display: flex;
+  flex-direction: column;
+}
+.boton {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+.boton:hover {
+  background-color: rgb(0, 74, 172);
+  color: rgb(9, 9, 121);
+  transform: scale(1.1, 1.1);
+}
+footer {
+  background-color: rgb(9, 9, 121);
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Iconos img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.Logo:hover {
+  transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 850px) {
+  .acercacont {
+    grid-template-areas:
+      "img1"
+      "texto1"
+      "img2"
+      "texto2";
+  }
+  .acercacont img {
+    width: 80%;
+  }
+  .contenedor {
+    width: 100%;
+    background-color: rgb(9, 9, 121);
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "nav";
+    justify-items: center;
+  }
+  nav {
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+    background: rgb(9, 9, 121);
+    text-align: center;
+  }
+  .img1 {
+    text-align: center;
+  }
+  .img2 {
+    text-align: center;
+  }
+  footer {
+    gap: 20px;
+  }
+  .ContPort {
+    grid-template-areas:
+      "mascotas"
+      "tecno"
+      "funi";
+  }
+  .datos {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
