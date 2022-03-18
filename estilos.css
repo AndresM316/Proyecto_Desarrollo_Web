@@ -21,7 +21,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "logo nav nav";
-  position: sticky;
+  position: relative;
   top: 0px;
 }
 nav {
@@ -132,31 +132,28 @@ section h2 {
 .parrafo {
   display: inline-block;
 }
-.mascotas {
-  justify-self: center;
-}
 .ContPort {
   justify-content: center;
   display: grid;
   grid-template-areas: "mascotas tecno funi";
-  gap: 40px;
+  gap: 60px;
   margin: 20px;
   text-align: center;
-}
-.ContPort img {
-  width: 15rem;
 }
 .ContPort p {
   text-align: justify;
 }
 .mascotas {
   grid-area: mascotas;
+  width: 20rem;
 }
 .Tecnoservicios {
   grid-area: tecno;
+  width: 20rem;
 }
 .funimation {
   grid-area: funi;
+  width: 20rem;
 }
 .ImgPort:hover {
   transform: scale(1.2, 1.2);
@@ -167,6 +164,25 @@ section h2 {
   padding: 20px;
   background-color: rgb(255, 255, 255);
   text-align: center;
+}
+.ContTray {
+  justify-content: center;
+  display: grid;
+  grid-template-areas: "edu lab";
+  gap: 30px;
+  margin: 40px;
+  text-align: center;
+}
+.ContTray img {
+  width: 70%;
+}
+.Educativa {
+  grid-area: edu;
+  width: 30rem;
+}
+.Laboral {
+  grid-area: lab;
+  width: 30rem;
 }
 .trayect {
   text-align: center;
@@ -245,6 +261,11 @@ footer {
   }
   footer {
     gap: 20px;
+  }
+  .ContTray {
+    grid-template-areas:
+      "edu"
+      "lab";
   }
   .ContPort {
     grid-template-areas:
