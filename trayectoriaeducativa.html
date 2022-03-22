@@ -15,29 +15,35 @@
 <body>
     <div class="contenedor">
         <header class="logo">
-            <img src="./img/Logo And.png" alt="Logo" width="150px">
+            <a href="index.html"><img src="./img/Logo And.png" alt="Logo" width="150px">
         </header>
         <nav class="nav">
-            <ul>
-                <li class="TextNav"><a href="index.html">Home</a></li>
-                <li class="TextNav"><a href="portafolio.html">Portafolio</a></li>
-                <li class="TextNav"><a href="trayectoria.html">Trayectoria</a>
-                    <ul>
-                        <li><a href="trayectoriaeducativa.html">Educativa</a></li>
-                        <li><a href="trayectorialaboral.html">Laboral</a></li>
-                    </ul>
-                </li>
-                <li class="TextNav"><a href="Contacto.html">Contacto</a></li>
-            </ul>
+            <div class="BoxNav">
+                <a href="index.html" class="Menu Home">Home</a>
+                <a href="portafolio.html" class="Menu Portafolio">Portafolio</a>
+                <div class="btn-group Menu Trayectoria">
+                  <a href="trayectoria.html" type="button" class="btn Menu Trayectoria">Trayectoria</a>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split Menu Trayectoria" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="./trayectoriaeducativa.html">Educativa</a></li>
+                    <li><a class="dropdown-item" href="./trayectorialaboral.html">Laboral</a></li>
+                  </ul>
+                </div>
+                <a href="Contacto.html" class="Menu Contacto">Contacto</a>
+            </div>
         </nav>
-    </div>
+      </div>
     <main>
-        <section class="trayect">
-            <h2 class="animate__animated animate__headShake">Educativa</h2>
-            <img src="./img/Trayectoria/estudio.png" alt="educativa">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo. Pariatur similique nihil dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consectetur, reprehenderit quasi eaque at incidunt rem itaque nostrum ducimus nulla temporibus et quam iste, fugiat officia laboriosam libero quae magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad numquam repellat eveniet officia? Quisquam commodi odio libero illum quam laborum unde, nesciunt quas explicabo odit necessitatibus dolorem incidunt excepturi.</p><br>
+        <h2 class="Principal animate__animated animate__fadeInUp">Trayectoria Educativa</h2>
+        <section class="trayect animate__animated animate__fadeInUp">
+            <div class="ImgTray">
+                <img src="./img/Trayectoria/estudio.png" alt="educativa">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo. Pariatur similique nihil dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consectetur, reprehenderit quasi eaque at incidunt rem itaque nostrum ducimus nulla temporibus et quam iste, fugiat officia laboriosam libero quae magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad numquam repellat eveniet officia? Quisquam commodi odio libero illum quam laborum unde, nesciunt quas explicabo odit necessitatibus dolorem incidunt excepturi.</p>
-        </section><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo. Pariatur similique nihil dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consectetur, reprehenderit quasi eaque at incidunt rem itaque nostrum ducimus nulla temporibus et quam iste, fugiat officia laboriosam libero quae magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad numquam repellat eveniet officia? Quisquam commodi odio libero illum quam laborum unde, nesciunt quas explicabo odit necessitatibus dolorem incidunt excepturi.</p>
+        </section>
     </main><br>
     <footer class="footer">
         <div class="Datos">

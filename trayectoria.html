@@ -15,42 +15,50 @@
 <body>
     <div class="contenedor">
         <header class="logo">
-            <img src="./img/Logo And.png" alt="Logo" width="150px">
+            <a href="index.html"><img src="./img/Logo And.png" alt="Logo" width="150px">
         </header>
         <nav class="nav">
-            <ul>
-                <li class="TextNav"><a href="index.html">Home</a></li>
-                <li class="TextNav"><a href="portafolio.html">Portafolio</a></li>
-                <li class="TextNav"><a href="trayectoria.html">Trayectoria</a>
-                    <ul>
-                        <li><a href="trayectoriaeducativa.html">Educativa</a></li>
-                        <li><a href="trayectorialaboral.html">Laboral</a></li>
-                    </ul>
-                </li>
-                <li class="TextNav"><a href="Contacto.html">Contacto</a></li>
-            </ul>
+            <div class="BoxNav">
+                <a href="index.html" class="Menu Home">Home</a>
+                <a href="portafolio.html" class="Menu Portafolio">Portafolio</a>
+                <div class="btn-group Menu Trayectoria">
+                  <a href="trayectoria.html" type="button" class="btn Menu Trayectoria">Trayectoria</a>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split Menu Trayectoria" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="./trayectoriaeducativa.html">Educativa</a></li>
+                    <li><a class="dropdown-item" href="./trayectorialaboral.html">Laboral</a></li>
+                  </ul>
+                </div>
+                <a href="Contacto.html" class="Menu Contacto">Contacto</a>
+            </div>
         </nav>
-    </div>
+      </div>
     <main>
+        <h2 class="Principal animate__animated animate__fadeInUp">Trayectoria</h2>
         <section id="Trayectoria">
-            <h2 class="animate__animated animate__headShake">Trayectoria</h2>
-            <div class="ContTray">
-                <div class="Educativa">
+            <div class="ContTray animate__animated animate__fadeInUp">
+                <a href="trayectoriaeducativa.html" class="Educativa">
                     <img src="./img/Trayectoria/estudio.png" alt="Educativa" class="ImgTray">
-                    <h3>Educativa</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
-                    <div class="boton">
-                        <a href="trayectoriaeducativa.html">Ver más</a>
+                    <div class="Titulos">
+                        <h3>Educativa</h3>
                     </div>
-                </div>
-                <div class="Laboral">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
+                    <div class="Botones">
+                        <h4>Ver más</h4>
+                    </div>
+                </a>
+                <a href="trayectorialaboral.html" class="Laboral">
                     <img src="./img/Trayectoria/trabajo.png" alt="Laboral" class="ImgTray">
-                    <h3>Laboral</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
-                    <div class="boton">
-                        <a href="trayectorialaboral.html">Ver más</a>
+                    <div class="Titulos">
+                        <h3>Laboral</h3>
                     </div>
-                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
+                    <div class="Botones">
+                        <h4>Ver más</h4>
+                    </div>
+                </a>
             </div>
         </section>
     </main><br>

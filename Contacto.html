@@ -16,29 +16,33 @@
 <body>
     <div class="contenedor">
         <header class="logo">
-            <img src="./img/Logo And.png" alt="Logo" width="150px">
+            <a href="index.html"><img src="./img/Logo And.png" alt="Logo" width="150px">
         </header>
         <nav class="nav">
-            <ul>
-                <li class="TextNav"><a href="index.html">Home</a></li>
-                <li class="TextNav"><a href="portafolio.html">Portafolio</a></li>
-                <li class="TextNav"><a href="trayectoria.html">Trayectoria</a>
-                    <ul>
-                        <li><a href="trayectoriaeducativa.html">Educativa</a></li>
-                        <li><a href="trayectorialaboral.html">Laboral</a></li>
-                    </ul>
-                </li>
-                <li class="TextNav"><a href="Contacto.html">Contacto</a></li>
-            </ul>
+            <div class="BoxNav">
+                <a href="index.html" class="Menu Home">Home</a>
+                <a href="portafolio.html" class="Menu Portafolio">Portafolio</a>
+                <div class="btn-group Menu Trayectoria">
+                  <a href="trayectoria.html" type="button" class="btn Menu Trayectoria">Trayectoria</a>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split Menu Trayectoria" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="./trayectoriaeducativa.html">Educativa</a></li>
+                    <li><a class="dropdown-item" href="./trayectorialaboral.html">Laboral</a></li>
+                  </ul>
+                </div>
+                <a href="Contacto.html" class="Menu Contacto">Contacto</a>
+            </div>
         </nav>
-    </div>
+      </div>
     <main>
-        <section class="Contacto">
-            <h2 class="animate__animated animate__headShake">Contacto</h2>
+        <h2 class="Principal animate__animated animate__fadeInUp">Contacto</h2>
+        <section class="Contacto animate__animated animate__fadeInUp">
             <div class="datos">
-                <div><br>
+                <div>
                     <h3>Para una mejor comunicación puedes dejar tus datos</h3>
-                </div><br>
+                </div>
                 <form class="row g-3">
                     <div class="row g-2">
                         <div class="col-md">
@@ -82,16 +86,15 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                          <label class="form-check-label" for="invalidCheck2">
-                            Acepto los términos y condiciones
-                          </label>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Acepto los términos y condiciones
+                        </label>
                       </div>
-                      <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Enviar</button>
+                      <div class="d-grid gap-2 d-md-flex mx-auto">
+                        <button class="btn btn-primary BotonForm" type="button">Enviar</button>
+                        <button class="btn btn-primary BotonForm2" type="button">Borrar</button>
                       </div>
                 </form>                  
             </div>

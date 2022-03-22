@@ -15,41 +15,100 @@
 <body>
     <div class="contenedor">
         <header class="logo">
-            <img src="./img/Logo And.png" alt="Logo" width="150px">
+            <a href="index.html"><img src="./img/Logo And.png" alt="Logo" class="LogoAnd">
         </header>
         <nav class="nav">
-            <ul>
-                <li class="TextNav"><a href="index.html">Home</a></li>
-                <li class="TextNav"><a href="portafolio.html">Portafolio</a></li>
-                <li class="TextNav"><a href="trayectoria.html">Trayectoria</a>
-                    <ul>
-                        <li><a href="trayectoriaeducativa.html">Educativa</a></li>
-                        <li><a href="trayectorialaboral.html">Laboral</a></li>
-                    </ul>
-                </li>
-                <li class="TextNav"><a href="Contacto.html">Contacto</a></li>
-            </ul>
+            <div class="BoxNav">
+                <a href="index.html" class="Menu Home">Home</a>
+                <a href="portafolio.html" class="Menu Portafolio">Portafolio</a>
+                <div class="btn-group Menu Trayectoria">
+                  <a href="trayectoria.html" type="button" class="btn Menu Trayectoria">Trayectoria</a>
+                  <button type="button" class="btn dropdown-toggle dropdown-toggle-split Menu Trayectoria" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="./trayectoriaeducativa.html">Educativa</a></li>
+                    <li><a class="dropdown-item" href="./trayectorialaboral.html">Laboral</a></li>
+                  </ul>
+                </div>
+                <a href="Contacto.html" class="Menu Contacto">Contacto</a>
+            </div>
         </nav>
-    </div>
+      </div>
     <main>
         <div>
-            <section class="acerca">
-                <img src="./img/Imagen-Acerca-1.jpg" alt="Imagen Acerca-1"><br><br>
-                <h2 class="animate__animated animate__bounce">Acerca de mi</h2><br>
+            <h2 class="Principal animate__animated animate__fadeInUp">Acerca de mi</h2>
+            <section class="acerca animate__animated animate__fadeInUp">
+                <img src="./img/Imagen-Acerca-Full.jpg" class="image_full" alt="Imagen Acerca">
+                <img src="./img/Imagen-Acerca-Mobile.jpg" class="image_mobile" alt="Imagen Acerca">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo. Pariatur similique nihil dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consectetur, reprehenderit quasi eaque at incidunt rem itaque nostrum ducimus nulla temporibus et quam iste, fugiat officia laboriosam libero quae magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad numquam repellat eveniet officia? Quisquam commodi odio libero illum quam laborum unde, nesciunt quas explicabo odit necessitatibus dolorem incidunt excepturi.</p>
             </section>
-            <section class="acercacont">
+            <section class="acerca2 tiempo">
                 <div class="img1">
-                    <img src="./img/Imagen-Acerca-2.jpg" alt="Imagen-Acerca-2">
+                    <div id="carouselExampleDark1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/Hobbies/Hobbies-1.jpg" class="d-block w-100" alt="Videojuegos">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Hobbies/Hobbies-2.jpg" class="d-block w-100" alt="Futbol">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Hobbies/Hobbies-3.jpg" class="d-block w-100" alt="SeriesTV">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
                 </div>
                 <div class="texto1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sed hic repudiandae perspiciatis corrupti adipisci iusto quidem ratione totam officia error commodi odit perferendis soluta iste inventore excepturi accusamus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto consectetur vel illo reprehenderit sed neque ut. Aspernatur sit aliquid nam at odit temporibus! Voluptatem nobis, similique velit perspiciatis blanditiis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam, sed ea voluptates odio perspiciatis obcaecati, adipisci veniam quaerat provident aliquid maiores iusto animi. Quas quaerat omnis iure necessitatibus non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sed hic repudiandae perspiciatis corrupti adipisci iusto quidem ratione totam officia error commodi odit perferendis soluta iste inventore excepturi accusamus earum. Aspernatur sit aliquid nam at odit temporibus! Voluptatem nobis, similique velit perspiciatis blanditiis a. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>En mi tiempo libre...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sed hic repudiandae perspiciatis corrupti adipisci iusto quidem ratione totam officia error commodi odit perferendis soluta iste inventore excepturi accusamus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto consectetur vel illo reprehenderit sed neque ut.</p>
                 </div>
+            </section>
+            <section class="acerca2 habilidad">
                 <div class="texto2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sed hic repudiandae perspiciatis corrupti adipisci iusto quidem ratione totam officia error commodi odit perferendis soluta iste inventore excepturi accusamus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto consectetur vel illo reprehenderit sed neque ut. Aspernatur sit aliquid nam at odit temporibus! Voluptatem nobis, similique velit perspiciatis blanditiis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam, sed ea voluptates odio perspiciatis obcaecati, adipisci veniam quaerat provident aliquid maiores iusto animi. Quas quaerat omnis iure necessitatibus non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sed hic repudiandae perspiciatis corrupti adipisci iusto quidem ratione totam officia error commodi odit perferendis soluta iste inventore excepturi accusamus earum. Aspernatur sit aliquid nam at odit temporibus! Voluptatem nobis, similique velit perspiciatis blanditiis a. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Algunas de mis habilidades...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sed hic repudiandae perspiciatis corrupti adipisci iusto quidem ratione totam officia error commodi odit perferendis soluta iste inventore excepturi accusamus earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto consectetur vel illo reprehenderit sed neque ut.</p>
                 </div>
                 <div class="img2">
-                    <img src="./img/Imagen-Acerca-2.jpg" alt="Imagen-Acerca-2">
+                    <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/Habilidades/Habilidades-1.jpg" class="d-block w-100" alt="Diseño">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Habilidades/Habilidades-2.jpg" class="d-block w-100" alt="Impresión">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Habilidades/Habilidades-3.jpg" class="d-block w-100" alt="DesarrolloWeb">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
                 </div>
             </section>
         </div>

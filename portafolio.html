@@ -14,102 +14,55 @@
 </head>
 <body>
     <div class="contenedor">
-        <header class="logo">
-            <img src="./img/Logo And.png" alt="Logo" width="150px">
-        </header>
-        <nav class="nav">
-            <ul>
-                <li class="TextNav"><a href="index.html">Home</a></li>
-                <li class="TextNav"><a href="portafolio.html">Portafolio</a></li>
-                <li class="TextNav"><a href="trayectoria.html">Trayectoria</a>
-                    <ul>
-                        <li><a href="trayectoriaeducativa.html">Educativa</a></li>
-                        <li><a href="trayectorialaboral.html">Laboral</a></li>
-                    </ul>
-                </li>
-                <li class="TextNav"><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <header class="logo">
+          <a href="index.html"><img src="./img/Logo And.png" alt="Logo" width="150px">
+      </header>
+      <nav class="nav">
+          <div class="BoxNav">
+              <a href="index.html" class="Menu Home">Home</a>
+              <a href="portafolio.html" class="Menu Portafolio">Portafolio</a>
+              <div class="btn-group Menu Trayectoria">
+                <a href="trayectoria.html" type="button" class="btn Menu Trayectoria">Trayectoria</a>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split Menu Trayectoria" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="./trayectoriaeducativa.html">Educativa</a></li>
+                  <li><a class="dropdown-item" href="./trayectorialaboral.html">Laboral</a></li>
+                </ul>
+              </div>
+              <a href="Contacto.html" class="Menu Contacto">Contacto</a>
+          </div>
+      </nav>
     </div>
     <main>
-        <section>
-            <h2 class="animate__animated animate__headShake">Portafolio</h2>
+      <h2 class="Principal animate__animated animate__fadeInUp">Portafolio</h2>
+        <section class="animate__animated animate__fadeInUp">
+          <div>
+            <h3>Estos son algunos de los trabajos destacados en mi carrera laboral y académica.</h3>
+          </div>
             <div class="ContPort">
-                <div class="mascotas">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/Portafolio/Mascotas-1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Portafolio/Mascotas-2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Portafolio/Mascotas-3.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    <h3>Mascotas</h3>
+                <a href="https://www.behance.net/gallery/90502469/Club-Mascotas-Easy" class="mascotas">
+                  <img src="./img/Portafolio/Mascotas-1.jpg" alt="Mascotas">
+                    <div class="Titulos">
+                      <h3>Mascotas</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
-                </div>
-                <div class="Tecnoservicios">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/Portafolio/Tecnoservicios-1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Portafolio/Tecnoservicios-2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Portafolio/Tecnoservicios-3.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+                </a>
+                <a href="https://www.behance.net/gallery/129067553/TecnoServicios-Diseno-UXUI" class="Tecnoservicios">
+                    <img src="./img/Portafolio/Tecnoservicios-1.jpg" alt="Tecnoservicios">
+                      <div class="Titulos">
+                        <h3>Tecnoservicios</h3>
                       </div>
-                    <h3>Tecnoservicios</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
-                </div>
-                <div class="funimation">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/Portafolio/Funimation-1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Portafolio/Funimation-2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Portafolio/Funimation-3.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
+                </a>
+                <a href="https://www.behance.net/gallery/135466397/Funimation-Rediseno-App-UXUI" class="funimation">
+                  <img src="./img/Portafolio/Funimation-1.jpg" alt="Funimation">
+                      <div class="Titulos">
+                        <h3>Funimation</h3>
                       </div>
-                    <h3>Funimation</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos optio voluptate quam fugit eaque voluptatibus ad dicta ducimus officiis culpa, temporibus expedita dolorem beatae explicabo.</p>
-                </div>
+                </a>
             </div>
         </section>
     </main>
